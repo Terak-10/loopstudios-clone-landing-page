@@ -1,0 +1,51 @@
+.header {
+    min-height: 90vh;
+    background-image: url(/img/desktop/image-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: var(--padding-header);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.main {
+    min-height: 80vh;
+    background-color: red;
+}
+
+
+.gallery {
+    background-color: pink;
+    min-height: 95vh;
+}
+
+
+.footer {
+    min-height: 5rem;
+    background-color: black;
+}
+
+.text-box {
+    width: 39vw;
+}
+
+.border {
+    width: 44vw;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 39vh;
+    margin-bottom: 1.2rem;
+    padding: 2rem;
+
+    
+}
+
+
+
+// 8000px zlom

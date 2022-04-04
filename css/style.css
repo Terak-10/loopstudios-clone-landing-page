@@ -1,0 +1,131 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+  --padding-header: 4rem 11rem 7rem 11rem; }
+
+html {
+  box-sizing: inherit; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 0.9375rem;
+  font-family: 'Josefin Sans', sans-serif; }
+
+.hamburger {
+  display: none;
+  align-items: center; }
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .top_logo {
+    height: 2rem;
+    width: 12rem; }
+  .top_ul {
+    list-style: none;
+    display: flex; }
+  .top_item {
+    margin-left: 2.2rem; }
+  .top_link:link, .top_link:visited {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; }
+
+.text-box_h-1 {
+  color: #fff;
+  font-size: clamp(3rem, 4.9vw, 6rem);
+  font-weight: 300;
+  line-height: 1.1;
+  text-transform: uppercase; }
+
+.header {
+  min-height: 90vh;
+  background-image: url(/img/desktop/image-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: var(--padding-header);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Josefin Sans', sans-serif; }
+
+.main {
+  min-height: 80vh;
+  background-color: red; }
+
+.gallery {
+  background-color: pink;
+  min-height: 95vh; }
+
+.footer {
+  min-height: 5rem;
+  background-color: black; }
+
+.text-box {
+  width: 39vw; }
+
+.border {
+  width: 44vw;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 39vh;
+  margin-bottom: 1.2rem;
+  padding: 2rem; }
+
+@media (max-width: 62.5em) {
+  :root {
+    --padding-header: 4rem 7rem 7rem 7rem; }
+  .text-box {
+    width: 80%;
+    min-height: 35vh;
+    display: flex;
+    align-items: center; }
+    .text-box_h-1 {
+      font-size: clamp(3rem, 7vw, 6rem); }
+  .border {
+    width: 100%; } }
+
+@media (max-width: 54.375em) {
+  .hamburger {
+    display: block; }
+  .top_ul {
+    display: none; } }
+
+@media (max-width: 46.875em) {
+  :root {
+    --padding-header: 4rem 4rem 4rem 4rem; }
+  .text-box {
+    width: 100%;
+    min-height: 35vh;
+    display: flex;
+    align-items: center; }
+    .text-box_h-1 {
+      font-size: clamp(3rem, 7vw, 6rem); } }
+
+@media (max-width: 32.1875em) {
+  .header {
+    min-height: 80vh; }
+  .text-box {
+    min-height: 25vh; }
+    .text-box_h-1 {
+      font-size: clamp(2rem, 4vw, 6rem); }
+  .border {
+    min-height: 30vh;
+    padding: 1rem;
+    margin-bottom: 3rem; } }
+
+@media (max-width: 24.375em) {
+  :root {
+    --padding-header: 3rem 2rem 4rem 2rem; } }

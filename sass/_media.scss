@@ -1,0 +1,67 @@
+@media (max-width: $bp-lg) {
+   :root {
+      --padding-header: 4rem 7rem 7rem 7rem;
+   }
+   .text-box {
+    width: 80%;
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    &_h-1 {
+         font-size: clamp(3rem,7vw,6rem);  
+    }
+   }
+   .border {
+    width: 100%;
+   }
+}
+
+@media (max-width: $bp-md) {
+   .hamburger {
+      display: block;
+   }
+   .top {
+      &_ul {
+         display: none;
+      }
+   }
+}
+
+@media (max-width: $bp-md-2) {
+   :root {
+      --padding-header: 4rem 4rem 4rem 4rem;
+   }
+   .text-box {
+      width: 100%;
+      min-height: 35vh;
+      display: flex;
+      align-items: center;
+      &_h-1 {
+           font-size: clamp(3rem,7vw,6rem); 
+      }
+     }
+}
+
+@media (max-width: $bp-sm) {
+   .header {
+      min-height: 80vh;
+   }
+   .text-box {
+       min-height: 25vh;
+
+      &_h-1 {
+         font-size: clamp(2rem,4vw,6rem);
+      }
+   }
+   .border {
+      min-height: 30vh;
+      padding: 1rem;
+      margin-bottom: 3rem;
+     }
+}
+
+@media (max-width: $bp-sm-2) {
+   :root {
+      --padding-header: 3rem 2rem 4rem 2rem;
+   }
+}

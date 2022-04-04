@@ -1,0 +1,41 @@
+.hamburger {
+    display: none;
+    align-items: center;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_logo {
+        height: 2rem;
+        width: 12rem;
+    }
+
+    &_ul {
+        list-style: none;
+        display: flex;
+    }
+
+    &_item {
+        margin-left: 2.2rem;
+    }
+
+    &_link:link,
+    &_link:visited {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+
+.text-box {
+    &_h-1 {
+        color: #fff;
+        font-size: clamp(3rem,4.9vw,6rem); //4.9
+        font-weight: 300;
+        line-height: 1.1;
+        text-transform: uppercase;
+    }
+}
