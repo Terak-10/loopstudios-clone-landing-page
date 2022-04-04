@@ -97,7 +97,7 @@ body {
     display: flex;
     align-items: center; }
     .text-box_h-1 {
-      font-size: clamp(3rem, 7vw, 6rem); }
+      font-size: clamp(2.2rem, 7vw, 6rem); }
   .border {
     width: 100%; } }
 
@@ -109,21 +109,29 @@ body {
 
 @media (max-width: 46.875em) {
   :root {
-    --padding-header: 4rem 4rem 4rem 4rem; }
+    --padding-header: 4rem 3.5rem 4rem 3.5rem; }
   .text-box {
-    width: 100%; } }
+    width: 88.4%; } }
 
 @media (max-width: 32.1875em) {
   .header {
     min-height: 80vh; }
   .text-box {
-    min-height: 25vh; }
+    min-height: 25vh;
+    width: 79%; }
     .text-box_h-1 {
-      font-size: clamp(2rem, 4vw, 6rem); }
+      font-size: clamp(1.9rem, 4.1vw, 6rem); }
   .border {
     min-height: 30vh;
     padding: 1rem;
     margin-bottom: 3rem; } }
+
+@media (max-width: 26.25em) {
+  .text-box {
+    min-height: 30vh;
+    width: 100%; }
+    .text-box_h-1 {
+      font-size: clamp(1.9rem, 4.1vw, 6rem); } }
 
 @media (max-width: 24.375em) {
   :root {
