@@ -1,9 +1,15 @@
+@media (max-width: $bp-fs) {
+   :root {
+      --padding-header: 4rem 8.5rem 7rem 8.5rem;
+   }
+}
+
 @media (max-width: $bp-lg) {
    :root {
       --padding-header: 4rem 7rem 7rem 7rem;
    }
    .text-box {
-    width: 80%;
+    width: 83%;
     min-height: 35vh;
     display: flex;
     align-items: center;

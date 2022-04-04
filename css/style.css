@@ -84,11 +84,15 @@ body {
   margin-bottom: 1.2rem;
   padding: 2rem; }
 
+@media (max-width: 75em) {
+  :root {
+    --padding-header: 4rem 8.5rem 7rem 8.5rem; } }
+
 @media (max-width: 62.5em) {
   :root {
     --padding-header: 4rem 7rem 7rem 7rem; }
   .text-box {
-    width: 80%;
+    width: 83%;
     min-height: 35vh;
     display: flex;
     align-items: center; }
