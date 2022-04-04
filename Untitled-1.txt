@@ -1,4 +1,0 @@
-    font-family: 'Alata', sans-serif;
-400
-    font-family: 'Josefin Sans', sans-serif;
-    300
