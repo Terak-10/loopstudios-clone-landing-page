@@ -5,16 +5,16 @@
     --Very-Dark-Gray: hsl(0, 0%, 41%);
 
     // Paddings 
-    --padding-header: 4rem 11rem 7rem 11rem;
+    --padding-header: 4rem 10.5rem 10.5rem 10.5rem;
+    --padding-main: 9rem 11rem;
 }
 
-$bp-fs: 75em;
 $bp-lg: 62.5em;
 $bp-md: 54.375em;
-$bp-md-2: 46.875em;
-$bp-sm: 32.1875em;
-$bp-tf: 26.25em;
-$bp-sm-2: 24.375em;
+$bp-md-2: 45em;
+$bp-sm: 32em;
+$bp-tf: 27.5em;
+$bp-ls: 18.75em;
 
 html {
     box-sizing: inherit;

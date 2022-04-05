@@ -1,21 +1,12 @@
-@media (max-width: $bp-fs) {
+@media (max-width: 1300px) {
    :root {
-      --padding-header: 4rem 8.5rem 7rem 8.5rem;
+      --padding-header: 4rem 8.3rem 8.3rem 8.3rem;
    }
 }
 
 @media (max-width: $bp-lg) {
    :root {
       --padding-header: 4rem 7rem 7rem 7rem;
-   }
-   .text-box {
-    width: 83%;
-    min-height: 35vh;
-    display: flex;
-    align-items: center;
-    &_h-1 {
-         font-size: clamp(2.2rem,7vw,6rem);  
-    }
    }
    .border {
     width: 100%;
@@ -31,48 +22,41 @@
          display: none;
       }
    }
+   .text-box {
+      &_h-1 {
+         font-size: clamp(2.8rem, 7.5vw, 4.37rem); 
+     }
+   }
 }
 
 @media (max-width: $bp-md-2) {
    :root {
-      --padding-header: 4rem 3.5rem 4rem 3.5rem;
+      --padding-header: 4rem 4rem 7rem 4rem;
    }
-   .text-box {
-      width: 88.4%;
-     }
 }
 
 @media (max-width: $bp-sm) {
-   .header {
-      min-height: 80vh;
-   }
-   .text-box {
-       min-height: 25vh;
-       width: 79%;
 
+   .text-box {
       &_h-1 {
-         font-size: clamp(1.9rem,4.1vw,6rem);
-      }
-   }
-   .border {
-      min-height: 30vh;
-      padding: 1rem;
-      margin-bottom: 3rem;
+         font-size: clamp(2.15rem, 2vw, 4.37rem); 
      }
+   }
 }
 
 @media (max-width: $bp-tf) {
+   :root {
+      --padding-header: 4rem 2rem 7rem 2rem;
+   }
    .text-box {
-      min-height: 30vh;
-      width: 100%;
-     &_h-1 {
-        margin-left: 1rem;
-     }
+      &_h-1{
+         font-size: clamp(2.01rem, 2vw, 4.37rem); 
+      }
   }
 }
 
-@media (max-width: $bp-sm-2) {
+@media (max-width: $bp-ls) {
    :root {
-      --padding-header: 3rem 2rem 4rem 2rem;
+      --padding-header: 4rem 1rem 7rem 1rem;
    }
 }

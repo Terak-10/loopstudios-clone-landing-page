@@ -1,5 +1,9 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .header {
-    min-height: 90vh;
+    min-height: 40rem;
     background-image: url(/img/desktop/image-hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -13,8 +17,9 @@
 }
 
 .main {
-    min-height: 80vh;
-    background-color: red;
+    background-color: #fff;
+    padding: var(--padding-main);
+    display: grid;
 }
 
 .gallery {
@@ -27,21 +32,13 @@
     background-color: black;
 }
 
-////////////
-.text-box {
-    width: 39vw;
-}
-
 .border {
-    width: 44vw;
+    max-width: 40rem;
     border: 2px solid #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 39vh;
-    margin-bottom: 1.2rem;
+    min-height: 30vh;
     padding: 2rem;
+    transform: translateY(1.8rem);
 }
-
-
-// 345 pride zlom
