@@ -6,8 +6,12 @@
 
     // Paddings 
     --padding-header: 4rem 10.5rem 10.5rem 10.5rem;
+
+    // Margin
+    --margin-text-box: 0rem;
 }
 
+$bp-hh: 92.1875em;
 $bp-lg: 62.5em;
 $bp-md: 54.375em;
 $bp-md-2: 45em;

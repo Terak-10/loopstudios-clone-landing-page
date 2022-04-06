@@ -3,7 +3,8 @@
   --Black: hsl(0, 0%, 0%);
   --Dark-Gray: hsl(0, 0%, 55%);
   --Very-Dark-Gray: hsl(0, 0%, 41%);
-  --padding-header: 4rem 10.5rem 10.5rem 10.5rem; }
+  --padding-header: 4rem 10.5rem 10.5rem 10.5rem;
+  --margin-text-box: 0rem; }
 
 html {
   box-sizing: inherit; }
@@ -60,6 +61,8 @@ body {
 .main_img {
   width: 98%;
   height: 100%;
+  object-fit: cover;
+  display: block;
   grid-column: 2 / 6;
   grid-row: 2 / 6; }
 
@@ -67,17 +70,17 @@ body {
   background-color: #fff;
   grid-column: 5 / 9;
   grid-row: 3 / 6;
-  height: 85%;
-  align-self: flex-end;
   display: grid;
   grid-template-columns: 7vw repeat(4, 1fr);
-  grid-template-rows: minmax(3rem, 7rem) repeat(4, 4vw);
+  grid-template-rows: minmax(3rem, 7rem) repeat(3, 4vw);
+  height: 85%;
+  align-self: flex-end;
   row-gap: 0.5rem; }
 
 .main_h-1 {
   grid-column: 2 / 6;
-  grid-row: 2 / 4;
-  font-size: clamp(1rem, 3.8vw, 4rem);
+  grid-row: 2 / 3;
+  font-size: clamp(1rem, 3vw, 2.7rem);
   text-transform: uppercase;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
@@ -85,12 +88,13 @@ body {
 
 .main_p {
   grid-column: 2 / 5;
-  grid-row: 4 / 6;
-  font-size: clamp(0.5rem, 1.15vw, 2rem);
+  grid-row: 3 / 6;
+  font-size: clamp(0.5rem, 1.1vw, 1.15rem);
   line-height: 1.5;
   align-self: flex-end;
   color: var(--Dark-Gray);
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: var(--margin-text-box); }
 
 .gallery_top {
   grid-column: 2 / 3;
@@ -98,10 +102,11 @@ body {
   justify-content: space-between; }
 
 .gallery_h-2 {
-  font-size: clamp(3rem, 2vw, 4rem);
+  font-size: clamp(1rem, 3.2vw, 5rem);
   text-transform: uppercase;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 1; }
 
 .gallery_btn {
   justify-self: self-start;
@@ -140,10 +145,9 @@ body {
   font-family: 'Josefin Sans', sans-serif; }
 
 .main {
-  background-color: #fff;
   display: grid;
-  grid-template-columns: 11.6vw repeat(6, 1fr) 11.6vw;
-  grid-template-rows: repeat(6, 10vw); }
+  grid-template-columns: 11.5vw repeat(6, 1fr) 11.5vw;
+  grid-template-rows: repeat(6, 8vw); }
 
 .gallery {
   display: grid;
@@ -153,6 +157,10 @@ body {
 .footer {
   min-height: 10rem;
   background-color: black; }
+
+@media (min-width: 92.1875em) {
+  :root {
+    --margin-text-box: 2rem; } }
 
 @media (max-width: 1300px) {
   :root {

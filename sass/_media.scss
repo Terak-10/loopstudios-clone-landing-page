@@ -1,3 +1,9 @@
+@media (min-width: $bp-hh) {
+   :root {
+      --margin-text-box: 2rem;
+   }
+}
+
 @media (max-width: 1300px) {
    :root {
       --padding-header: 4rem 8.3rem 8.3rem 8.3rem;

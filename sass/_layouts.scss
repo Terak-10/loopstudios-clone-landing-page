@@ -17,10 +17,9 @@
 }
 
 .main {
-    background-color: #fff;
     display: grid;
-    grid-template-columns: 11.6vw repeat(6,1fr) 11.6vw;
-    grid-template-rows: repeat(6, 10vw);
+    grid-template-columns: 11.5vw repeat(6,1fr) 11.5vw;
+    grid-template-rows: repeat(6, 8vw);
 }
 
 .gallery {
