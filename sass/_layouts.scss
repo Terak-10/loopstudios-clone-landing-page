@@ -21,10 +21,11 @@
     display: grid;
     grid-template-columns: 11.5vw 1fr 11.5vw;
     grid-template-rows: 5rem 1fr;
+    margin-bottom: 10rem;
 }
 
 .footer {
-    min-height: 10rem;
+    min-height: 10rem; // spraviť asi vw unit 
     background-color: black;
 }
 
