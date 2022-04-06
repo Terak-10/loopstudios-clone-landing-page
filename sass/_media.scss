@@ -1,6 +1,22 @@
+@media (min-width: 1868px) {
+   .main,
+   .gallery  {
+      max-width: 1868px;
+      margin: 0 auto;
+   }
+}
+
 @media (min-width: $bp-hh) {
    :root {
       --margin-text-box: 2rem;
+   }
+}
+
+@media (min-width: 1440px) {
+   .header,
+   .footer {
+      max-width: 1440px;
+      margin: 0 auto;
    }
 }
 

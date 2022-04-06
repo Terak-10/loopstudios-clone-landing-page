@@ -78,7 +78,7 @@ body {
   row-gap: 0.5rem; }
 
 .main_h-1 {
-  grid-column: 2 / 6;
+  grid-column: 2 / 5;
   grid-row: 2 / 3;
   font-size: clamp(1rem, 3vw, 2.7rem);
   text-transform: uppercase;
@@ -89,7 +89,7 @@ body {
 .main_p {
   grid-column: 2 / 5;
   grid-row: 3 / 6;
-  font-size: clamp(0.5rem, 1.1vw, 1.15rem);
+  font-size: clamp(0.5rem, 1.12vw, 1.3rem);
   line-height: 1.5;
   align-self: flex-end;
   color: var(--Dark-Gray);
@@ -128,10 +128,6 @@ body {
 .gallery img {
   width: 100%; }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto; }
-
 .header {
   min-height: 40rem;
   background-image: url(/img/desktop/image-hero.jpg);
@@ -151,16 +147,28 @@ body {
 
 .gallery {
   display: grid;
-  grid-template-columns: 11.6vw 1fr 11.6vw;
+  grid-template-columns: 11.5vw 1fr 11.5vw;
   grid-template-rows: 5rem 1fr; }
 
 .footer {
   min-height: 10rem;
   background-color: black; }
 
+@media (min-width: 1868px) {
+  .main,
+  .gallery {
+    max-width: 1868px;
+    margin: 0 auto; } }
+
 @media (min-width: 92.1875em) {
   :root {
     --margin-text-box: 2rem; } }
+
+@media (min-width: 1440px) {
+  .header,
+  .footer {
+    max-width: 1440px;
+    margin: 0 auto; } }
 
 @media (max-width: 1300px) {
   :root {
