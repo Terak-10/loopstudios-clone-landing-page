@@ -24,8 +24,9 @@
 }
 
 .gallery {
-    background-color: pink;
-    min-height: 95vh;
+    display: grid;
+    grid-template-columns: 11.6vw 1fr 11.6vw;
+    grid-template-rows: 5rem 1fr;
 }
 
 .footer {
@@ -33,13 +34,3 @@
     background-color: black;
 }
 
-.border {
-    max-width: 40rem;
-    border: 2px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 30vh;
-    padding: 2rem;
-    transform: translateY(1.8rem);
-}
