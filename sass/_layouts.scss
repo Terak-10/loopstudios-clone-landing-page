@@ -27,5 +27,8 @@
 .footer {
     min-height: 10rem; // spraviť asi vw unit 
     background-color: black;
+    display: grid;
+    grid-template-columns: 11.5vw 1fr minmax(min-contetn, max-content);
+    grid-template-rows: 2rem minmax(min-content, max-content);
 }
 

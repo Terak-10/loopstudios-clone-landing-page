@@ -227,7 +227,10 @@ body {
 
 .footer {
   min-height: 10rem;
-  background-color: black; }
+  background-color: black;
+  display: grid;
+  grid-template-columns: 11.5vw 1fr minmax(min-contetn, max-content);
+  grid-template-rows: 2rem minmax(min-content, max-content); }
 
 @media (min-width: 1868px) {
   .main,
