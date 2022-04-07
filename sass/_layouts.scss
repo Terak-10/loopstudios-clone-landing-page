@@ -28,7 +28,10 @@
     min-height: 10rem; // spraviť asi vw unit 
     background-color: black;
     display: grid;
-    grid-template-columns: 11.5vw 1fr minmax(min-contetn, max-content);
-    grid-template-rows: 2rem minmax(min-content, max-content);
+    grid-template-columns: calc(11.5vw - 2rem) 1fr minmax(min-content, max-content) calc(11.5vw - 2rem);
+    grid-template-rows: 2vw  repeat(2, minmax(min-content, max-content)) 2vw;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    margin-bottom: 3rem;
 }
 
