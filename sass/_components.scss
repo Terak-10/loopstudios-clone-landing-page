@@ -212,6 +212,7 @@
     &_p:hover {
         color: #000;
         cursor: pointer;
+        background-color: rgba(253, 251, 251, 0.7);
     }
 
     &_p-1 {
@@ -276,6 +277,22 @@
        font-weight: bold;
        font-size: 1rem;
        padding: 0.5rem 0.5rem 0.5rem 0;
+       transition: .2s;
+   }
+
+   &_item:hover {
+       position: relative;
+       cursor: pointer;
+   }
+
+   &_item::after {
+       content: "";
+       position: absolute;
+       height: 1px solid #fff;
+       width: 30%;
+       top: 100%;
+       left: 1.1rem;
+       border: 1px solid var(--White);
    }
 
    &_social-box {

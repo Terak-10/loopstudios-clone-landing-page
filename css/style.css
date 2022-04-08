@@ -190,7 +190,8 @@ body {
 
 .gallery_p:hover {
   color: #000;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: rgba(253, 251, 251, 0.7); }
 
 .gallery_p-1 {
   grid-column: 1 / 2;
@@ -245,7 +246,21 @@ body {
   color: var(--White);
   font-weight: bold;
   font-size: 1rem;
-  padding: 0.5rem 0.5rem 0.5rem 0; }
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  transition: .2s; }
+
+.footer_item:hover {
+  position: relative;
+  cursor: pointer; }
+
+.footer_item::after {
+  content: "";
+  position: absolute;
+  height: 1px solid #fff;
+  width: 30%;
+  top: 100%;
+  left: 1.1rem;
+  border: 1px solid var(--White); }
 
 .footer_social-box {
   grid-column: 3 / 4;
