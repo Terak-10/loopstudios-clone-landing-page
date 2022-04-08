@@ -25,7 +25,7 @@
 }
 
 .footer {
-    min-height: 10rem; // spraviť asi vw unit 
+    min-height: 10rem;
     background-color: black;
     display: grid;
     grid-template-columns: calc(11.5vw - 2rem) 1fr minmax(min-content, max-content) calc(11.5vw - 2rem);
