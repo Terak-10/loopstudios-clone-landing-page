@@ -1,14 +1,25 @@
-@media (min-width: 1868px) {
+$bp-hh-1: 116.75em;
+$bp-hh: 92.1875em;
+$bp-lg-1: 100.625em;
+$bp-top: 90em;
+$bp-lg: 62.5em;
+$bp-md: 54.375em;
+$bp-md-2: 45em;
+$bp-sm: 32em;
+$bp-tf: 27.5em;
+$bp-ls: 18.75em;
+
+@media (min-width: $bp-hh-1) {
    .main,
    .gallery  {
-      max-width: 1868px;
+      max-width: $bp-hh-1;
       margin: 0 auto;
    }
 }
 
-@media (min-width: 1610px) {
+@media (min-width: $bp-lg-1) {
    .gallery {
-      max-width: 1610px;
+      max-width: $bp-lg-1;
       margin: 0 auto;
       margin-bottom: 5vw;
    }
@@ -20,15 +31,15 @@
    }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $bp-top) {
    .header,
    .footer {
-      max-width: 1440px;
+      max-width: $bp-top;
       margin: 0 auto;
    }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 81.25em) {
    :root {
       --padding-header: 4rem 8.3rem 8.3rem 8.3rem;
    }

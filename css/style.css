@@ -294,15 +294,15 @@ body {
   row-gap: 1rem;
   column-gap: 2rem; }
 
-@media (min-width: 1868px) {
+@media (min-width: 116.75em) {
   .main,
   .gallery {
-    max-width: 1868px;
+    max-width: 116.75em;
     margin: 0 auto; } }
 
-@media (min-width: 1610px) {
+@media (min-width: 100.625em) {
   .gallery {
-    max-width: 1610px;
+    max-width: 100.625em;
     margin: 0 auto;
     margin-bottom: 5vw; } }
 
@@ -310,13 +310,13 @@ body {
   :root {
     --margin-text-box: 2rem; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 90em) {
   .header,
   .footer {
-    max-width: 1440px;
+    max-width: 90em;
     margin: 0 auto; } }
 
-@media (max-width: 1300px) {
+@media (max-width: 81.25em) {
   :root {
     --padding-header: 4rem 8.3rem 8.3rem 8.3rem; } }
 
