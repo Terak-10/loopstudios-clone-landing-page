@@ -18,7 +18,7 @@
 
     @media (max-width: 950px) {
         grid-template-columns: 11.5vw repeat(8,1fr) 11.5vw;
-        grid-template-rows: repeat(8, 8vw);
+        grid-template-rows: repeat(8, 8vw) repeat(2, 10vw);
     }
 }
 
@@ -26,7 +26,7 @@
     display: grid;
     grid-template-columns: 11.5vw 1fr 11.5vw;
     grid-template-rows: 5rem 1fr;
-    margin-bottom: 10rem;
+    margin-bottom: 10vw;
 }
 
 .footer {
