@@ -8,7 +8,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 
     &_logo {
         height: 2rem;
@@ -27,8 +26,13 @@
 
     &_item:hover {
         position: relative;
-        cursor: pointer;   
+        cursor: pointer;  
+        opacity: 1;  
     }
+
+    &_item:hover:after {
+        opacity: 1; 
+     }
     
      &_item::after {
         content: '';
@@ -39,6 +43,7 @@
         left: 8px;
         height: 1px;
         background-color: #fff;
+        opacity: 0;
     }
    
     &_link:link,
@@ -81,8 +86,8 @@
        grid-row: 2 / 6;
 
        @media (max-width: 950px) {
-        grid-column: 3 / 9;    ///// UPRAVIŤ
-        grid-row: 2 / 6;         ///// UPRAVIŤ
+        grid-column: 3 / 9;    
+        grid-row: 2 / 6;        
         width: 100%;
     }
 
@@ -100,11 +105,11 @@
     row-gap: 0.5rem;
 
         @media (max-width: 950px) {
-                grid-column: 2 / 10;  ///// UPRAVIŤ
-                grid-row: 7 / 10;     ///// UPRAVIŤ
+                grid-column: 2 / 10;  
+                grid-row: 7 / 10;     
 
-                grid-template-columns: repeat(4, 1fr);      ///// UPRAVIŤ
-                grid-template-rows: minmax(3rem, 7rem) repeat(3, 4vw);       ///// UPRAVIŤ
+                grid-template-columns: repeat(4, 1fr);      
+                grid-template-rows: minmax(3rem, 7rem) repeat(3, 4vw);       
             }
 
 
@@ -201,14 +206,13 @@
         color: #000;
     }
 
-    &_img:hover {
-        opacity: 30%;
-    }
-
-
     &_img {
         width: 100%;
     }         
+
+    &_img:hover {
+        opacity: 30%;
+    }
                                                // 640px prichádza mobile design,  prehodiť všetky px na em/rem
 
                                                
@@ -220,6 +224,10 @@
         line-height: 1;
         text-transform: uppercase;
         width: 80%;
+    }
+
+    &_h2:hover {
+      color: #fff;
     }
 
     &_item-4 {
@@ -261,6 +269,10 @@
     cursor: pointer;
 }
 
+
+  &_item:hover::after {
+      opacity: 1;
+  }
  &_item::after {
     content: '';
     position: absolute;
@@ -270,6 +282,7 @@
     left: 8px;
     height: 1px;
     background-color: #fff;
+    opacity: 0;
 }
 
    &_social-box {
