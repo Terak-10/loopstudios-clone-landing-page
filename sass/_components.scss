@@ -185,7 +185,6 @@
         grid-column: 2 / 3;
         grid-row: 2 / 3;
 
-        
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));      
         gap: 1.5rem;
@@ -194,24 +193,38 @@
     &_container {
         color: #fff;
         height: 91.7%;
+        overflow: hidden;
     }
 
     &_container:hover {
         cursor: pointer;
         color: #000;
-        opacity: 50%;
     }
+
+    &_img:hover {
+        opacity: 30%;
+    }
+
 
     &_img {
         width: 100%;
-    }                                                            // 640px prichádza mobile design,  prehodiť všetky px na em/rem
+    }         
+                                               // 640px prichádza mobile design,  prehodiť všetky px na em/rem
+
+                                               
 
     &_h2 {
         transform: translateY(-5.5rem);
         margin-left: 1.5rem;
-        background-color: blue;
-        width: 50%;
+        font-size: clamp(1.2rem, 2.3vw, 2.5rem);
+        line-height: 1;
+        text-transform: uppercase;
+        width: 80%;
     }
+
+    &_item-4 {
+        width: 50%;
+    } 
 }
 
 // Footer

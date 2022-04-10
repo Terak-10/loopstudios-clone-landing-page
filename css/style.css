@@ -169,12 +169,15 @@ body {
 
 .gallery_container {
   color: #fff;
-  height: 91.7%; }
+  height: 91.7%;
+  overflow: hidden; }
 
 .gallery_container:hover {
   cursor: pointer;
-  color: #000;
-  opacity: 50%; }
+  color: #000; }
+
+.gallery_img:hover {
+  opacity: 30%; }
 
 .gallery_img {
   width: 100%; }
@@ -182,7 +185,12 @@ body {
 .gallery_h2 {
   transform: translateY(-5.5rem);
   margin-left: 1.5rem;
-  background-color: blue;
+  font-size: clamp(1.2rem, 2.3vw, 2.5rem);
+  line-height: 1;
+  text-transform: uppercase;
+  width: 80%; }
+
+.gallery_item-4 {
   width: 50%; }
 
 .footer_logo {
