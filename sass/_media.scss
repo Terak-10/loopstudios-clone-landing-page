@@ -87,7 +87,7 @@ $bp-ls: 18.75em;
 
 @media (max-width: $bp-tf) {
    :root {
-      --padding-header: 4rem 2rem 7rem 2rem;
+      --padding-header: 2rem 2rem 7rem 2rem;
    }
    .text-box {
       &_h-1{
@@ -98,10 +98,9 @@ $bp-ls: 18.75em;
 
 @media (max-width: $bp-ls) {
    :root {
-      --padding-header: 4rem 1rem 7rem 1rem;
+      --padding-header: 1.5rem 1rem 7rem 1rem;
    }
 }
-
 
 // Mobile design
 @media (max-width: 42.5em) {
@@ -110,7 +109,6 @@ $bp-ls: 18.75em;
       grid-template-columns: 1vw 1fr 1vw;
       grid-template-rows: 4rem 1fr;
       margin-bottom: 5rem;
-
 
       &_top{
          grid-column: 2 / 3;
@@ -164,5 +162,22 @@ $bp-ls: 18.75em;
          grid-row: 4 / 5;
          text-align: center;
       }
+   }
+}
+
+
+@media (max-width: 27.5em) {
+
+   .gallery {
+      &_h-2 {
+         font-size: clamp(1.2rem, 6vw, 3rem);
+         margin-top: 0.5rem;
+      }
+   }
+}
+
+@media (max-width: 25em) {
+   .main {
+      padding-bottom: 5rem;
    }
 }
