@@ -15,10 +15,10 @@
     display: grid;
     grid-template-columns: 11.5vw repeat(6,1fr) 11.5vw;
     grid-template-rows: repeat(6, 8vw);
-
     @media (max-width: 950px) {
         grid-template-columns: 11.5vw repeat(8,1fr) 11.5vw;
         grid-template-rows: repeat(8, 8vw) repeat(2, 10vw);
+        margin-bottom: 5rem;
     }
 }
 

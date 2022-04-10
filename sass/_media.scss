@@ -101,3 +101,68 @@ $bp-ls: 18.75em;
       --padding-header: 4rem 1rem 7rem 1rem;
    }
 }
+
+
+// Mobile design
+@media (max-width: 42.5em) {
+   .gallery {
+      display: grid;
+      grid-template-columns: 1vw 1fr 1vw;
+      grid-template-rows: 4rem 1fr;
+      margin-bottom: 5rem;
+
+
+      &_top{
+         grid-column: 2 / 3;
+         grid-row: 1 / 2;
+      }
+
+      &_box {
+         grid-column: 2 / 3;
+         grid-row: 2 / 3;
+
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      }
+
+     &_h2 {
+      transform: translateY(-3.5rem);
+      margin-left: 0.5rem;
+      font-size: clamp(0.7rem, 1.3vw, 2.5rem);
+      line-height: 1;
+      text-transform: uppercase;
+      width: 80%;
+     }
+   }
+
+   .footer {
+      grid-template-columns: 5vw 1fr 5vw;
+      grid-template-rows: repeat(3, 1fr) min-content;
+      padding-bottom: 2rem;
+
+      &_logo, 
+      &_ul,
+      &_social-box,
+      &_copy {
+         grid-column: 2 / 3;
+         align-self: center;
+         justify-self: center;
+      }
+      &_logo {
+         grid-row: 1 / 2; 
+      }
+
+      &_ul {
+         grid-row: 2 / 3;
+      }
+
+      &_social-box {
+         grid-row: 3 / 4;
+      }
+
+      &_copy {
+         grid-row: 4 / 5;
+         text-align: center;
+      }
+   }
+}
